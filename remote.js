@@ -71,7 +71,7 @@ class RemoteInstance {
     });
   }
 
-  _put(endpoint, data = {}, isAPI = false, params = {}) {
+  _put(endpoint, data = {}, params = {}, isAPI = false) {
     const headers = this._requestHeaders;
     const url = isAPI ? this.api : this.url;
 
